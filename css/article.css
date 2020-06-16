@@ -1,0 +1,40 @@
+body {
+  background-color: green;
+}
+
+.container {
+  background-color: blue;
+  display: grid;
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  height: 100vh;
+  grid-template-columns: 300px;
+  grid-template-rows: 250px 600px 1fr;
+  grid-template-areas:
+  "hd hd hd hd hd hd hd hd"
+  "main main main main main main main main"
+  "ft ft ft ft ft ft ft ft";
+}
+
+.header {
+  background-color: yellow;
+  grid-area: hd;
+}
+
+.menu {
+  background-color: indigo;
+  grid-area: sd;
+}
+
+.footer {
+  background-color: purple;
+  grid-area: ft;
+}
+
+.content {
+  background-color: pink;
+  grid-area: main;
+  background-image: url('https://placem.at/people');
+  background-size: cover;
+}
